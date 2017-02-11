@@ -1,5 +1,11 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Classes\View;
+use App\Classes\Handler;
+use App\Classes\AmoCRM;
+
 class MainController 
 {
     private $amoCRM;

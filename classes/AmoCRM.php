@@ -1,6 +1,14 @@
 <?php
 
-class AmoCRM{
+namespace App\Classes;
+
+use App\Classes\User;
+use App\Classes\Lead;
+use App\Classes\Contact;
+use App\Classes\Request;
+
+class AmoCRM 
+{
     
     private $user;
     private $lead;
@@ -25,7 +33,7 @@ class AmoCRM{
                 ->setStatusId($api->config['LeadStatusId']);
             $api->request(new Request(Request::SET, $lead));
             return $api->last_insert_id;
-        } catch(Exception $e){
+        } catch(\Exception $e){
             return null;
         }
     }

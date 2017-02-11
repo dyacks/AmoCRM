@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Classes;
+
 class User
 {
     public $name;

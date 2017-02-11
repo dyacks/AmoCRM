@@ -1,5 +1,10 @@
 <?php
 
+namespace App\Classes;
+
+use App\Classes\Entity;
+
+
 class Contact extends Entity
 {
 	public $name;

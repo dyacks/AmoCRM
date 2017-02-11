@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Classes;
+
+use App\Classes\Entity;
+
 class Lead extends Entity
 {
 	public $name;

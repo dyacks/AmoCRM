@@ -1,5 +1,8 @@
 <?php
 
+namespace App\Classes;
+
+
 class Request
 {
 	const AUTH = 1;
